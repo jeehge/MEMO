@@ -23,6 +23,22 @@
 		E9AA9E0E25BC171400650723 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E0D25BC171400650723 /* UIViewController+Extension.swift */; };
 		E9AA9E1325BC173500650723 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E1225BC173500650723 /* BaseViewController.swift */; };
 		E9AA9E1825BC17B400650723 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E1725BC17B400650723 /* StoryboardName.swift */; };
+		E9AA9E2B25BC274100650723 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E2A25BC274100650723 /* List.storyboard */; };
+		E9AA9E3825BC275300650723 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E3725BC275300650723 /* Setting.storyboard */; };
+		E9AA9E3D25BC275E00650723 /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E3C25BC275E00650723 /* Edit.storyboard */; };
+		E9AA9E4325BC277700650723 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E4225BC277700650723 /* MemoCell.swift */; };
+		E9AA9E4825BC27A700650723 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E4725BC27A700650723 /* App.swift */; };
+		E9AA9E4D25BC27C300650723 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E4C25BC27C300650723 /* Constant.swift */; };
+		E9AA9E5225BC289800650723 /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E5125BC289800650723 /* MemoListViewController.swift */; };
+		E9AA9E5725BC29D500650723 /* CellIdentifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E5625BC29D500650723 /* CellIdentifierable.swift */; };
+		E9AA9E6725BC378200650723 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E6925BC378200650723 /* Localizable.strings */; };
+		E9AA9E6F25BC396400650723 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E6E25BC396400650723 /* Colors.xcassets */; };
+		E9AA9E7725BC3ACF00650723 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E7625BC3ACF00650723 /* String+Extension.swift */; };
+		E9AA9E7C25BC3CE900650723 /* lottie-text.json in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E7B25BC3CE900650723 /* lottie-text.json */; };
+		E9AA9E8425BC3EE400650723 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8325BC3EE400650723 /* ColorName.swift */; };
+		E9AA9E8925BC522F00650723 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8825BC522F00650723 /* URL+Extension.swift */; };
+		E9AA9E8F25BC57E800650723 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */; };
+		E9AA9E9725BC58BE00650723 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +87,24 @@
 		E9AA9E0D25BC171400650723 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E9AA9E1225BC173500650723 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E9AA9E1725BC17B400650723 /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		E9AA9E2A25BC274100650723 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		E9AA9E3725BC275300650723 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		E9AA9E3C25BC275E00650723 /* Edit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Edit.storyboard; sourceTree = "<group>"; };
+		E9AA9E4225BC277700650723 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		E9AA9E4725BC27A700650723 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		E9AA9E4C25BC27C300650723 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E9AA9E5125BC289800650723 /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		E9AA9E5625BC29D500650723 /* CellIdentifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifierable.swift; sourceTree = "<group>"; };
+		E9AA9E6325BC374B00650723 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E9AA9E6825BC378200650723 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9AA9E6D25BC378700650723 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9AA9E6E25BC396400650723 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E9AA9E7625BC3ACF00650723 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E9AA9E7B25BC3CE900650723 /* lottie-text.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-text.json"; sourceTree = "<group>"; };
+		E9AA9E8325BC3EE400650723 /* ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
+		E9AA9E8825BC522F00650723 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +218,8 @@
 			children = (
 				E9AA9DB925BC130C00650723 /* Info.plist */,
 				E9AA9DB425BC130C00650723 /* Assets.xcassets */,
+				E9AA9E6E25BC396400650723 /* Colors.xcassets */,
+				E9AA9E6925BC378200650723 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				E9AA9DEB25BC146300650723 /* Extension */,
+				E9AA9E4725BC27A700650723 /* App.swift */,
+				E9AA9E4C25BC27C300650723 /* Constant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -199,7 +237,10 @@
 		E9AA9DEB25BC146300650723 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E9AA9E8D25BC57D300650723 /* Theme */,
 				E9AA9E0D25BC171400650723 /* UIViewController+Extension.swift */,
+				E9AA9E7625BC3ACF00650723 /* String+Extension.swift */,
+				E9AA9E8825BC522F00650723 /* URL+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -208,6 +249,9 @@
 			isa = PBXGroup;
 			children = (
 				E9AA9DFF25BC167C00650723 /* Common */,
+				E9AA9E2925BC1A1800650723 /* List */,
+				E9AA9E2825BC1A1300650723 /* Edit */,
+				E9AA9E2725BC1A0800650723 /* Setting */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,7 +285,10 @@
 		E9AA9E1F25BC17D400650723 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E9AA9E7B25BC3CE900650723 /* lottie-text.json */,
 				E9AA9E1725BC17B400650723 /* StoryboardName.swift */,
+				E9AA9E5625BC29D500650723 /* CellIdentifierable.swift */,
+				E9AA9E8325BC3EE400650723 /* ColorName.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -253,6 +300,49 @@
 				E9AA9DEE25BC147C00650723 /* Manager */,
 			);
 			path = DataBase;
+			sourceTree = "<group>";
+		};
+		E9AA9E2725BC1A0800650723 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA9E3725BC275300650723 /* Setting.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E9AA9E2825BC1A1300650723 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA9E3C25BC275E00650723 /* Edit.storyboard */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		E9AA9E2925BC1A1800650723 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA9E4125BC276700650723 /* Cell */,
+				E9AA9E2A25BC274100650723 /* List.storyboard */,
+				E9AA9E5125BC289800650723 /* MemoListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		E9AA9E4125BC276700650723 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA9E4225BC277700650723 /* MemoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E9AA9E8D25BC57D300650723 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */,
+				E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +435,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = E9AA9D9F25BC130B00650723;
 			productRefGroup = E9AA9DA925BC130B00650723 /* Products */;
@@ -365,6 +456,12 @@
 			files = (
 				E9AA9E0125BC168800650723 /* Common.storyboard in Resources */,
 				E9AA9DB825BC130C00650723 /* LaunchScreen.storyboard in Resources */,
+				E9AA9E3825BC275300650723 /* Setting.storyboard in Resources */,
+				E9AA9E6725BC378200650723 /* Localizable.strings in Resources */,
+				E9AA9E2B25BC274100650723 /* List.storyboard in Resources */,
+				E9AA9E6F25BC396400650723 /* Colors.xcassets in Resources */,
+				E9AA9E3D25BC275E00650723 /* Edit.storyboard in Resources */,
+				E9AA9E7C25BC3CE900650723 /* lottie-text.json in Resources */,
 				E9AA9DB525BC130C00650723 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,14 +590,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AA9E8F25BC57E800650723 /* UILabel+Extension.swift in Sources */,
+				E9AA9E8425BC3EE400650723 /* ColorName.swift in Sources */,
 				E9AA9E0E25BC171400650723 /* UIViewController+Extension.swift in Sources */,
 				E9AA9E0925BC16F100650723 /* IntroViewController.swift in Sources */,
+				E9AA9E5725BC29D500650723 /* CellIdentifierable.swift in Sources */,
+				E9AA9E9725BC58BE00650723 /* UIButton+Extension.swift in Sources */,
 				E9AA9DAC25BC130B00650723 /* AppDelegate.swift in Sources */,
+				E9AA9E4825BC27A700650723 /* App.swift in Sources */,
 				E9AA9E1825BC17B400650723 /* StoryboardName.swift in Sources */,
 				E9AA9DF525BC14BA00650723 /* MemoInfo.swift in Sources */,
 				E9AA9DAE25BC130B00650723 /* SceneDelegate.swift in Sources */,
+				E9AA9E8925BC522F00650723 /* URL+Extension.swift in Sources */,
+				E9AA9E7725BC3ACF00650723 /* String+Extension.swift in Sources */,
 				E9AA9E1325BC173500650723 /* BaseViewController.swift in Sources */,
+				E9AA9E5225BC289800650723 /* MemoListViewController.swift in Sources */,
+				E9AA9E4D25BC27C300650723 /* Constant.swift in Sources */,
 				E9AA9DF025BC14A300650723 /* DBManager.swift in Sources */,
+				E9AA9E4325BC277700650723 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,8 +647,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				E9AA9DB725BC130C00650723 /* Base */,
+				E9AA9E6325BC374B00650723 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E9AA9E6925BC378200650723 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9AA9E6825BC378200650723 /* ko */,
+				E9AA9E6D25BC378700650723 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -551,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -612,6 +730,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

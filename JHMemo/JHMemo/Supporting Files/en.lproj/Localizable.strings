@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  JHMemo
+
+  Created by JH on 2021/01/23.
+  
+*/
+
+/** intro */
+"지혜로운 메모 :)" = "jihye MEMO :)";
+
+/** list */
+"내용없음" = "No content";
+"MEMO" = "MEMO";
+"등록된 메모가 없습니다." = "No registered notes found.";
+
+/** create & edit */
+"메모등록" = "Registration";
+"메모수정" = "Modification";
+"등록" = "Register";
+"수정" = "Modify";
+"사진앨범" = "Photo album";
+"카메라" = "Camera";
+"그리기" = "Drawing";
+"취소" = "Cancel";
+"사진을 추가해주세요." = "Please add the picture.";
+"확인" = "Confirm";
+"카메라를 지원하지 않습니다." = "Camera not supported.";
+
+/** detail */
+"삭제" = "Delete";
+"해당 내용을 삭제할까요？" = "Do you want me to delete this content?";
+"삭제하게 되면 복구가 불가능합니다." = "If you delete it, it will not be recoverable.";
+"이미지를 저장하시겠습니까?" = "Do you want to save the image?";
+"저장" = "Save";
+"성공!" = "Success!";
+"실패!" = "Fail!";
+"이미지가 사진에 저장되었습니다." = "Image saved to your photos.";
+
+/** drawingview */
+"이 곳에 메모해주세요." = "Please make a note here.";
+"지우기" = "Erase";
+
+/** Permission */
+"NSCameraUsageDescription" = "Camera capture is required to register image memo.";
+"NSPhotoLibraryAddUsageDescription" = "A photo library is required to register image memo.";
+"NSPhotoLibraryUsageDescription" = "A photo library is required to register image memo.";
