@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'JHMemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for JHMemo
+    pod 'FMDB'
+    pod 'Kingfisher'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+  
+	target 'JHMemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'JHMemoUITests' do
+    # Pods for testing
+  end
+
+end
