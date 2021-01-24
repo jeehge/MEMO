@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -121,7 +121,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="background"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="55J-0j-Ung"/>
                                     <constraint firstAttribute="bottom" secondItem="5gV-Cg-M9y" secondAttribute="bottom" constant="4" id="VwS-Nj-a63"/>
@@ -153,7 +153,6 @@
                         <outlet property="createButton" destination="iiS-dy-QvN" id="OdX-hR-16L"/>
                         <outlet property="createButtonBottomConstraint" destination="a6G-y8-fEh" id="Urh-Co-cOf"/>
                         <outlet property="emptyInfoLabel" destination="diY-uD-CzB" id="fiP-E2-Dpq"/>
-                        <outlet property="headerView" destination="yDN-xd-9ne" id="xwI-do-fyn"/>
                         <outlet property="tableView" destination="5fx-Th-FM7" id="Z84-Sf-Pc7"/>
                         <outlet property="titleLabel" destination="5gV-Cg-M9y" id="e8s-xt-VJX"/>
                     </connections>
@@ -165,8 +164,8 @@
     </scenes>
     <resources>
         <image name="icons8-plus_filled_memo" width="256" height="256"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="background">
+            <color red="0.87450980392156863" green="0.89411764705882357" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

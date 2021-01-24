@@ -13,7 +13,6 @@ final class MemoListViewController: BaseViewController {
 	@IBOutlet private weak var tableView: UITableView!
 	@IBOutlet private weak var createButton: UIButton!
 	@IBOutlet private weak var emptyInfoLabel: UILabel!
-	@IBOutlet private weak var headerView: UIView!
 	@IBOutlet private weak var titleLabel: UILabel!
 	@IBOutlet private weak var createButtonBottomConstraint: NSLayoutConstraint!
 	@IBOutlet private weak var bannerView: UIView!
@@ -27,21 +26,21 @@ final class MemoListViewController: BaseViewController {
 		initTableView()
 		initCreateButton()
 		initLabel()
-		bind()
 	}
 	
+	// MARK: - initialize
 	private func initTableView() {
 		tableView.delegate = self
 		tableView.dataSource = self
 		
-		memoList = DBManager.shared.selectMemoData()
-		tableView.reloadData()
+		reloadTableView()
 	}
 	
 	private func initCreateButton() {
 		createButton.rx.tap.bind { [weak self] in
-//			let createVC: MemoCreateViewController = MemoCreateViewController.viewController(from: "Edit")
-//			self?.present(createVC, animated: true)
+			guard let self = self else { return }
+			let createVC: MemoCreateViewController = MemoCreateViewController.viewController(from: .edit)
+			self.present(createVC, animated: true)
 		}.disposed(by: disposeBag)
 	}
 	
@@ -51,11 +50,11 @@ final class MemoListViewController: BaseViewController {
 		emptyInfoLabel.font = .systemFont(ofSize: 16)
 		emptyInfoLabel.adjustsFontSizeToFitWidth = true
 		
-		headerView.backgroundColor = UIColor(named: ColorName.background.description)
 		titleLabel.setTitleStyle(text: "MEMO".localized, size: 33)
 		createButton.setShadow()
 	}
 	
+	// MARK: - bind
 	private func bind() {
 		let abservable: Observable<[MemoInfo]> = Observable.of(memoList)
 				
@@ -68,6 +67,12 @@ final class MemoListViewController: BaseViewController {
 				self?.emptyInfoLabel.isHidden = true
 			}
 		}).disposed(by: disposeBag)
+	}
+	
+	func reloadTableView() {
+		memoList = DBManager.shared.selectMemoData()
+		tableView.reloadData()
+		bind()
 	}
 }
 
@@ -119,6 +124,7 @@ extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
 	// 사용자가 스크롤을 끝냈을때 알림
 	func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
 		
+		// TODO: - 개선필요
 		// 아래 부분은 Completion에 작성하는게 어떨까요
 		// anaimteKeyFrame을 활용해서 작성해보세요
 		// https://zeddios.tistory.com/636

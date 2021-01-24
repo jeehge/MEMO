@@ -19,7 +19,7 @@ extension URL {
 			let fileURL = URL(fileURLWithPath: strPath)
 			return fileURL
 		} else {
-			print("Error loading image")
+			print("Error loading faile path")
 		}
 		
 		return nil

@@ -21,19 +21,19 @@ extension UIButton {
 		self.backgroundColor = UIColor(named: ColorName.button.description)
 		self.tintColor =  .white
 		self.layer.cornerRadius = 8
-		self.titleLabel?.font = .systemFont(ofSize: size)
+		self.titleLabel?.font = .systemFont(ofSize: size.adjused)
 	}
 	
 	// 확인/수정 버튼 설정
 	func setConfirmStyle(text: String, size: CGFloat, color: UIColor) {
-		self.titleLabel?.font = .boldSystemFont(ofSize: size)
+		self.titleLabel?.font = .boldSystemFont(ofSize: size.adjused)
 		self.setTitle(text, for: .normal)
 		self.setTitleColor(color, for: .normal)
 	}
 	
 	// 취소/지우기 버튼 설정
 	func setCancelStyle(text: String, size: CGFloat, color: UIColor) {
-		self.titleLabel?.font = .boldSystemFont(ofSize: size)
+		self.titleLabel?.font = .boldSystemFont(ofSize: size.adjused)
 		self.setTitle(text, for: .normal)
 		self.setTitleColor(color, for: .normal)
 	}

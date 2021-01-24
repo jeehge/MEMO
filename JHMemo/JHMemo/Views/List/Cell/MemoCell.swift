@@ -28,16 +28,16 @@ final class MemoCell: UITableViewCell {
 		
 		// 모서리 둥글게
 		cellView.clipsToBounds = true
-		cellView.layer.cornerRadius = self.cellView.frame.width/12
+		cellView.layer.cornerRadius = self.cellView.frame.width / 12
 		
 		// 그림자
 		shadowView.layer.masksToBounds = false
-		shadowView.layer.cornerRadius = self.shadowView.frame.width/12
+		shadowView.layer.cornerRadius = self.shadowView.frame.width / 12
 		shadowView.layer.shadowColor = UIColor.darkGray.cgColor
 		shadowView.layer.shadowOffset = CGSize(width: 5, height: 5)
 		shadowView.layer.shadowOpacity = 0.2
 		
-		hashTagLabel.textColor = UIColor(named: "text")
+		hashTagLabel.textColor = UIColor(named: ColorName.text.description)
 	}
 	
 	// MARK: - Setting Cell
