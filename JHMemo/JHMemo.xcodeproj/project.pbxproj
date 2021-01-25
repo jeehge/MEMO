@@ -10,6 +10,8 @@
 		33AF0F205B564E92C2FA74F5 /* Pods_JHMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3518F773890729A0A18B8E /* Pods_JHMemoTests.framework */; };
 		5ADCD88568A4E6D6C0814F17 /* Pods_JHMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050249E78DBE76F5C69B7F8 /* Pods_JHMemo.framework */; };
 		8BC0146EEF87A5D3501174C9 /* Pods_JHMemo_JHMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB79223A17D889848AA0DDA /* Pods_JHMemo_JHMemoUITests.framework */; };
+		E92A50A325BF0F240013830A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A225BF0F240013830A /* DrawingView.swift */; };
+		E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A725BF0F310013830A /* DrawViewController.swift */; };
 		E95486BB25BD7ECF00F2C4AC /* MemoCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */; };
 		E95486CB25BD81B100F2C4AC /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486CA25BD81B100F2C4AC /* UITextView+Extension.swift */; };
 		E95486D025BD822A00F2C4AC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486CF25BD822A00F2C4AC /* UIView+Extension.swift */; };
@@ -17,7 +19,6 @@
 		E95486E025BD832C00F2C4AC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486DF25BD832C00F2C4AC /* Date+Extension.swift */; };
 		E95486E525BD934500F2C4AC /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486E425BD934500F2C4AC /* CGFloat+Extension.swift */; };
 		E954871125BDAE3200F2C4AC /* Custom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E954871025BDAE3200F2C4AC /* Custom.storyboard */; };
-		E954871625BDB13600F2C4AC /* ImageActionSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E954871525BDB13600F2C4AC /* ImageActionSheetController.swift */; };
 		E954871B25BDB4F000F2C4AC /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E954871A25BDB4F000F2C4AC /* UIWindow+Extension.swift */; };
 		E9AA9DAC25BC130B00650723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9DAB25BC130B00650723 /* AppDelegate.swift */; };
 		E9AA9DAE25BC130B00650723 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9DAD25BC130B00650723 /* SceneDelegate.swift */; };
@@ -76,6 +77,8 @@
 		6EDF2DE618BCC5BC943F5230 /* Pods-JHMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemoTests.release.xcconfig"; path = "Target Support Files/Pods-JHMemoTests/Pods-JHMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7BB79223A17D889848AA0DDA /* Pods_JHMemo_JHMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemo_JHMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3518F773890729A0A18B8E /* Pods_JHMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92A50A225BF0F240013830A /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		E92A50A725BF0F310013830A /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		E94B7B1A900280D96D2CC528 /* Pods-JHMemo-JHMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemo-JHMemoUITests.release.xcconfig"; path = "Target Support Files/Pods-JHMemo-JHMemoUITests/Pods-JHMemo-JHMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCreateViewController.swift; sourceTree = "<group>"; };
 		E95486CA25BD81B100F2C4AC /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
@@ -84,7 +87,6 @@
 		E95486DF25BD832C00F2C4AC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E95486E425BD934500F2C4AC /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		E954871025BDAE3200F2C4AC /* Custom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Custom.storyboard; sourceTree = "<group>"; };
-		E954871525BDB13600F2C4AC /* ImageActionSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageActionSheetController.swift; sourceTree = "<group>"; };
 		E954871A25BDB4F000F2C4AC /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		E9AA9DA825BC130B00650723 /* JHMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9AA9DAB25BC130B00650723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				E954871025BDAE3200F2C4AC /* Custom.storyboard */,
-				E954871525BDB13600F2C4AC /* ImageActionSheetController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -347,6 +348,8 @@
 			children = (
 				E9AA9E3C25BC275E00650723 /* Edit.storyboard */,
 				E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */,
+				E92A50A225BF0F240013830A /* DrawingView.swift */,
+				E92A50A725BF0F310013830A /* DrawViewController.swift */,
 			);
 			path = Edit;
 			sourceTree = "<group>";
@@ -629,8 +632,10 @@
 				E9AA9E8F25BC57E800650723 /* UILabel+Extension.swift in Sources */,
 				E9AA9E8425BC3EE400650723 /* ColorName.swift in Sources */,
 				E95486E525BD934500F2C4AC /* CGFloat+Extension.swift in Sources */,
+				E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */,
 				E9AA9E0E25BC171400650723 /* UIViewController+Extension.swift in Sources */,
 				E95486CB25BD81B100F2C4AC /* UITextView+Extension.swift in Sources */,
+				E92A50A325BF0F240013830A /* DrawingView.swift in Sources */,
 				E9AA9E0925BC16F100650723 /* IntroViewController.swift in Sources */,
 				E9AA9E5725BC29D500650723 /* CellIdentifierable.swift in Sources */,
 				E95486E025BD832C00F2C4AC /* Date+Extension.swift in Sources */,
@@ -648,7 +653,6 @@
 				E9AA9E7725BC3ACF00650723 /* String+Extension.swift in Sources */,
 				E9AA9E1325BC173500650723 /* BaseViewController.swift in Sources */,
 				E9AA9E5225BC289800650723 /* MemoListViewController.swift in Sources */,
-				E954871625BDB13600F2C4AC /* ImageActionSheetController.swift in Sources */,
 				E9AA9E4D25BC27C300650723 /* Constant.swift in Sources */,
 				E9AA9DF025BC14A300650723 /* DBManager.swift in Sources */,
 				E9AA9E4325BC277700650723 /* MemoCell.swift in Sources */,
