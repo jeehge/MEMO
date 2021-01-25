@@ -18,9 +18,10 @@ final class IntroViewController: BaseViewController {
 		initIntroAnimation()
 	}
 	
+	// MARK: - initialize
 	private func initIntroAnimation() {
-		self.titleLabel.text = "지혜로운 메모 :)".localized
-		self.titleLabel.alpha = 0
+		titleLabel.text = "지혜로운 메모 :)".localized
+		titleLabel.alpha = 0
 		
 		UIView.animate(withDuration: 3.0, delay: 0.0, options: .curveLinear, animations: {
 			var frame = self.titleLabel.frame

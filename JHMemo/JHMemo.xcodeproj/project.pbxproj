@@ -12,6 +12,7 @@
 		8BC0146EEF87A5D3501174C9 /* Pods_JHMemo_JHMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB79223A17D889848AA0DDA /* Pods_JHMemo_JHMemoUITests.framework */; };
 		E92A50A325BF0F240013830A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A225BF0F240013830A /* DrawingView.swift */; };
 		E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A725BF0F310013830A /* DrawViewController.swift */; };
+		E92A50E125BF15130013830A /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50E025BF15130013830A /* UIWindow+Extension.swift */; };
 		E95486BB25BD7ECF00F2C4AC /* MemoCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */; };
 		E95486CB25BD81B100F2C4AC /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486CA25BD81B100F2C4AC /* UITextView+Extension.swift */; };
 		E95486D025BD822A00F2C4AC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486CF25BD822A00F2C4AC /* UIView+Extension.swift */; };
@@ -19,7 +20,6 @@
 		E95486E025BD832C00F2C4AC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486DF25BD832C00F2C4AC /* Date+Extension.swift */; };
 		E95486E525BD934500F2C4AC /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486E425BD934500F2C4AC /* CGFloat+Extension.swift */; };
 		E954871125BDAE3200F2C4AC /* Custom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E954871025BDAE3200F2C4AC /* Custom.storyboard */; };
-		E954871B25BDB4F000F2C4AC /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E954871A25BDB4F000F2C4AC /* UIWindow+Extension.swift */; };
 		E9AA9DAC25BC130B00650723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9DAB25BC130B00650723 /* AppDelegate.swift */; };
 		E9AA9DAE25BC130B00650723 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9DAD25BC130B00650723 /* SceneDelegate.swift */; };
 		E9AA9DB525BC130C00650723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9DB425BC130C00650723 /* Assets.xcassets */; };
@@ -79,6 +79,7 @@
 		7F3518F773890729A0A18B8E /* Pods_JHMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92A50A225BF0F240013830A /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		E92A50A725BF0F310013830A /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		E92A50E025BF15130013830A /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		E94B7B1A900280D96D2CC528 /* Pods-JHMemo-JHMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemo-JHMemoUITests.release.xcconfig"; path = "Target Support Files/Pods-JHMemo-JHMemoUITests/Pods-JHMemo-JHMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCreateViewController.swift; sourceTree = "<group>"; };
 		E95486CA25BD81B100F2C4AC /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		E95486DF25BD832C00F2C4AC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E95486E425BD934500F2C4AC /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		E954871025BDAE3200F2C4AC /* Custom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Custom.storyboard; sourceTree = "<group>"; };
-		E954871A25BDB4F000F2C4AC /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		E9AA9DA825BC130B00650723 /* JHMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9AA9DAB25BC130B00650723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9AA9DAD25BC130B00650723 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 				E95486D725BD82F900F2C4AC /* UIImage+Extension.swift */,
 				E95486DF25BD832C00F2C4AC /* Date+Extension.swift */,
 				E95486E425BD934500F2C4AC /* CGFloat+Extension.swift */,
-				E954871A25BDB4F000F2C4AC /* UIWindow+Extension.swift */,
+				E92A50E025BF15130013830A /* UIWindow+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -640,13 +640,13 @@
 				E9AA9E5725BC29D500650723 /* CellIdentifierable.swift in Sources */,
 				E95486E025BD832C00F2C4AC /* Date+Extension.swift in Sources */,
 				E9AA9E9725BC58BE00650723 /* UIButton+Extension.swift in Sources */,
+				E92A50E125BF15130013830A /* UIWindow+Extension.swift in Sources */,
 				E95486D025BD822A00F2C4AC /* UIView+Extension.swift in Sources */,
 				E9AA9DAC25BC130B00650723 /* AppDelegate.swift in Sources */,
 				E95486D825BD82F900F2C4AC /* UIImage+Extension.swift in Sources */,
 				E95486BB25BD7ECF00F2C4AC /* MemoCreateViewController.swift in Sources */,
 				E9AA9E4825BC27A700650723 /* App.swift in Sources */,
 				E9AA9E1825BC17B400650723 /* StoryboardName.swift in Sources */,
-				E954871B25BDB4F000F2C4AC /* UIWindow+Extension.swift in Sources */,
 				E9AA9DF525BC14BA00650723 /* MemoInfo.swift in Sources */,
 				E9AA9DAE25BC130B00650723 /* SceneDelegate.swift in Sources */,
 				E9AA9E8925BC522F00650723 /* URL+Extension.swift in Sources */,
@@ -764,7 +764,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -820,7 +820,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

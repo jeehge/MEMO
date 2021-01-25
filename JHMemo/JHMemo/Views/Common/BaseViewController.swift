@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 class BaseViewController: UIViewController, ViewControllerFromStoryBoard {
-	
+	// MARK: - Properties
 	let disposeBag: DisposeBag = DisposeBag()
 	
 	// MARK: - Life Cycle
