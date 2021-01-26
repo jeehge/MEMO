@@ -60,5 +60,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera capture is required to register image memo.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>A photo library is required to register image memo.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>A photo library is required to register image memo.</string>
 </dict>
 </plist>
