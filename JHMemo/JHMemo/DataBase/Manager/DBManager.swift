@@ -21,7 +21,6 @@ class DBManager {
 	private let memoTag = "memo_tag"
 	private let memoPath = "memo_image_path"
 
-
 	// MARK: - Initialize
 	private init() {
 		// create memo table
@@ -84,10 +83,8 @@ class DBManager {
 					if  let mDate   = results.string(forColumn: memoDate),
 						let mTag    = results.string(forColumn: memoTag),
 						let mPath   = results.string(forColumn: memoPath) {
-						let memo    = MemoInfo(seq: mSeq, date:mDate, tag: mTag, path: mPath)
+						let memo    = MemoInfo(seq: mSeq, date: mDate, tag: mTag, path: mPath)
 						memoDic.append(memo)
-					} else {
-						print ("DataBaseManager - paser error")
 					}
 				}
 			} catch {

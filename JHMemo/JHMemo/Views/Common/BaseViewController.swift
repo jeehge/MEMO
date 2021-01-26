@@ -12,11 +12,11 @@ import RxCocoa
 class BaseViewController: UIViewController, ViewControllerFromStoryBoard {
 	// MARK: - Properties
 	let disposeBag: DisposeBag = DisposeBag()
-	
+
 	// MARK: - Life Cycle
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+
 		view.backgroundColor = UIColor(named: ColorName.background.description)
 	}
 }

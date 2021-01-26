@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		E92A50A325BF0F240013830A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A225BF0F240013830A /* DrawingView.swift */; };
 		E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A725BF0F310013830A /* DrawViewController.swift */; };
 		E92A50E125BF15130013830A /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50E025BF15130013830A /* UIWindow+Extension.swift */; };
+		E92A515825BFB2910013830A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E92A515725BFB2910013830A /* .swiftlint.yml */; };
 		E95486BB25BD7ECF00F2C4AC /* MemoCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */; };
 		E95486CB25BD81B100F2C4AC /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486CA25BD81B100F2C4AC /* UITextView+Extension.swift */; };
 		E95486D025BD822A00F2C4AC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486CF25BD822A00F2C4AC /* UIView+Extension.swift */; };
@@ -37,7 +38,6 @@
 		E9AA9E3825BC275300650723 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E3725BC275300650723 /* Setting.storyboard */; };
 		E9AA9E3D25BC275E00650723 /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E3C25BC275E00650723 /* Edit.storyboard */; };
 		E9AA9E4325BC277700650723 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E4225BC277700650723 /* MemoCell.swift */; };
-		E9AA9E4825BC27A700650723 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E4725BC27A700650723 /* App.swift */; };
 		E9AA9E4D25BC27C300650723 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E4C25BC27C300650723 /* Constant.swift */; };
 		E9AA9E5225BC289800650723 /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E5125BC289800650723 /* MemoListViewController.swift */; };
 		E9AA9E5725BC29D500650723 /* CellIdentifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E5625BC29D500650723 /* CellIdentifierable.swift */; };
@@ -80,6 +80,7 @@
 		E92A50A225BF0F240013830A /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		E92A50A725BF0F310013830A /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		E92A50E025BF15130013830A /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		E92A515725BFB2910013830A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E94B7B1A900280D96D2CC528 /* Pods-JHMemo-JHMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemo-JHMemoUITests.release.xcconfig"; path = "Target Support Files/Pods-JHMemo-JHMemoUITests/Pods-JHMemo-JHMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCreateViewController.swift; sourceTree = "<group>"; };
 		E95486CA25BD81B100F2C4AC /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		E9AA9E3725BC275300650723 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		E9AA9E3C25BC275E00650723 /* Edit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Edit.storyboard; sourceTree = "<group>"; };
 		E9AA9E4225BC277700650723 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
-		E9AA9E4725BC27A700650723 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		E9AA9E4C25BC27C300650723 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		E9AA9E5125BC289800650723 /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
 		E9AA9E5625BC29D500650723 /* CellIdentifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifierable.swift; sourceTree = "<group>"; };
@@ -189,6 +189,7 @@
 		E9AA9D9F25BC130B00650723 = {
 			isa = PBXGroup;
 			children = (
+				E92A515725BFB2910013830A /* .swiftlint.yml */,
 				E9AA9DAA25BC130B00650723 /* JHMemo */,
 				E9AA9DC125BC130C00650723 /* JHMemoTests */,
 				E9AA9DCC25BC130C00650723 /* JHMemoUITests */,
@@ -256,7 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				E9AA9DEB25BC146300650723 /* Extension */,
-				E9AA9E4725BC27A700650723 /* App.swift */,
 				E9AA9E4C25BC27C300650723 /* Constant.swift */,
 			);
 			path = Utils;
@@ -395,6 +395,7 @@
 				E9AA9DA525BC130B00650723 /* Frameworks */,
 				E9AA9DA625BC130B00650723 /* Resources */,
 				B3DA466F673EA3AD21C30EDB /* [CP] Embed Pods Frameworks */,
+				E92A514A25BF95D50013830A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -502,6 +503,7 @@
 				E9AA9E7C25BC3CE900650723 /* lottie-text.json in Resources */,
 				E9AA9DB525BC130C00650723 /* Assets.xcassets in Resources */,
 				E954871125BDAE3200F2C4AC /* Custom.storyboard in Resources */,
+				E92A515825BFB2910013830A /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +624,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E92A514A25BF95D50013830A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -645,7 +666,6 @@
 				E9AA9DAC25BC130B00650723 /* AppDelegate.swift in Sources */,
 				E95486D825BD82F900F2C4AC /* UIImage+Extension.swift in Sources */,
 				E95486BB25BD7ECF00F2C4AC /* MemoCreateViewController.swift in Sources */,
-				E9AA9E4825BC27A700650723 /* App.swift in Sources */,
 				E9AA9E1825BC17B400650723 /* StoryboardName.swift in Sources */,
 				E9AA9DF525BC14BA00650723 /* MemoInfo.swift in Sources */,
 				E9AA9DAE25BC130B00650723 /* SceneDelegate.swift in Sources */,

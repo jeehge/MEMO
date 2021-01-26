@@ -14,7 +14,7 @@ extension Date {
 		formater.dateFormat = format
 		return formater.string(from: self)
 	}
-	
+
 	// n일 뒤 날자를 돌려준다 (선택한 날짜의 7일 뒤 할 때 편하게 사용)
 	func getSomeDayDate(intervalDay: Double) -> Date {
 		let resultDate: Date
@@ -25,7 +25,7 @@ extension Date {
 		}
 		return resultDate
 	}
-	
+
 	// 두 개의 Date의 차이를 리턴해준다 (최대 10일까지만 조회 가능하도록 할 때 편하게 사용)
 	func getIntervalDays(date: Date?, anotherDay: Date? = nil) -> Double {
 		var interval: Double!

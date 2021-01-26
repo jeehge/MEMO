@@ -11,7 +11,8 @@ target 'JHMemo' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'lottie-ios'
-	
+		pod 'SwiftLint'
+		
   target 'JHMemoTests' do
     inherit! :search_paths
     # Pods for testing

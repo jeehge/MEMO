@@ -14,7 +14,7 @@ extension UILabel {
 		self.text = text
 		self.adjustsFontSizeToFitWidth = true
 	}
-	
+
 	func setBodyStyle(text: String?, size: CGFloat) {
 		self.textColor = UIColor(named: ColorName.text.description)
 		self.font = .systemFont(ofSize: size.adjused)
@@ -22,4 +22,3 @@ extension UILabel {
 		self.adjustsFontSizeToFitWidth = true
 	}
 }
-
