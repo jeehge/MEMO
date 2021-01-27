@@ -97,7 +97,8 @@ final class MemoCreateViewController: BaseViewController {
 	}
 
 	private func removeNotification() {
-		NotificationCenter.default.removeObserver(self)
+		NotificationCenter.default.removeObserver(UIResponder.keyboardWillShowNotification, name: nil, object: nil)
+		NotificationCenter.default.removeObserver(UIResponder.keyboardWillHideNotification, name: nil, object: nil)
 	}
 
 	@objc func keyboardWillShow(_ sender: Notification) {
@@ -263,7 +264,6 @@ extension MemoCreateViewController: UIImagePickerControllerDelegate, UINavigatio
 			imagePicker.sourceType = .camera
 			present(imagePicker, animated: true, completion: nil)
 		} else {
-			print("CreateViewController - this device cannot use Camera")
 			let alert = UIAlertController(title: nil, message: "카메라를 지원하지 않습니다.".localized, preferredStyle: .alert)
 			let cancel = UIAlertAction(title: "취소".localized, style: .cancel, handler: nil)
 			alert.addAction(cancel)
