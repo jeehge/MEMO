@@ -58,8 +58,7 @@ final class MemoDetailViewController: BaseViewController {
 
 		// 삭제 버튼
 		deleteButton.rx.tap.bind { [weak self] in
-			let alert = UIAlertController(title: "해당 내용을 삭제할까요？".localized, message: "삭제하게 되면 복구가 불가능합니다.".localized, preferredStyle: UIAlertController.Style.alert)
-			let okAction = UIAlertAction(title: "삭제".localized, style: UIAlertAction.Style.destructive, handler: { _ in
+			self?.alert(title: "해당 내용을 삭제할까요？".localized, message: "삭제하게 되면 복구가 불가능합니다.".localized, okTitle: "삭제".localized, okHandler: { _ in
 				if let info = self?.detailMemoInfo {
 					DBManager.shared.deleteMemoData(info: info)
 					if let listVC: MemoListViewController = self?.presentingViewController as? MemoListViewController {
@@ -69,23 +68,13 @@ final class MemoDetailViewController: BaseViewController {
 				} else {
 					print("detail memo info is nil")
 				}
-			})
-
-			let cancelAction = UIAlertAction(title: "취소".localized, style: UIAlertAction.Style.cancel, handler: nil)
-			alert.addAction(okAction)
-			alert.addAction(cancelAction)
-			self?.present(alert, animated: true)
+			}, cancelTitle: "취소".localized)
 		}.disposed(by: disposeBag)
 
 		downloadButton.rx.tap.bind { [weak self] in
-			let alert = UIAlertController(title: nil, message: "이미지를 저장하시겠습니까?".localized, preferredStyle: UIAlertController.Style.alert)
-			let saveAction = UIAlertAction(title: "저장".localized, style: UIAlertAction.Style.destructive, handler: { _ in
+			self?.alert(message: "이미지를 저장하시겠습니까?".localized, okTitle: "저장".localized, okHandler: { _ in
 				self?.saveGalleryImage()
-			})
-			let cancelAction = UIAlertAction(title: "취소".localized, style: UIAlertAction.Style.cancel, handler: nil)
-			alert.addAction(saveAction)
-			alert.addAction(cancelAction)
-			self?.present(alert, animated: true)
+			}, cancelTitle: "취소".localized)
 		}.disposed(by: disposeBag)
 	}
 
@@ -148,13 +137,9 @@ final class MemoDetailViewController: BaseViewController {
 
 	@objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
 		if error == nil {
-			let alertController = UIAlertController(title: "성공!".localized, message: "이미지가 사진에 저장되었습니다.".localized, preferredStyle: .alert)
-			alertController.addAction(UIAlertAction(title: "확인".localized, style: .default, handler: nil))
-			present(alertController, animated: true, completion: nil)
+			alert(title: "성공!".localized, message: "이미지가 사진에 저장되었습니다.".localized, okTitle: "확인".localized)
 		} else {
-			let alertController = UIAlertController(title: "실패!".localized, message: error?.localizedDescription, preferredStyle: .alert)
-			alertController.addAction(UIAlertAction(title: "확인".localized, style: .default, handler: nil))
-			present(alertController, animated: true, completion: nil)
+			alert(title: "실패!".localized, message: error?.localizedDescription, okTitle: "확인".localized)
 		}
 	}
 }

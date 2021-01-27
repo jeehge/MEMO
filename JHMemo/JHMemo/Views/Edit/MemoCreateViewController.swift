@@ -154,6 +154,11 @@ final class MemoCreateViewController: BaseViewController {
 				self.view.layoutIfNeeded()
 			}, completion: { _ in
 				// 선택한 이미지 제거
+				if self.isCreateMemo {
+					self.imagePath = nil
+				} else {
+					self.updateMemo?.memoMediaPath = ""
+				}
 				self.memoImageView.image = nil
 				self.memoImageView.alpha = 1
 			})
@@ -163,7 +168,7 @@ final class MemoCreateViewController: BaseViewController {
 	// MARK: - Private Method
 	// 필수값 체크
 	private func isEmpty() -> Bool {
-		if imagePath == nil && updateMemo?.memoMediaPath == nil {
+		if (isCreateMemo && imagePath == nil) || (isCreateMemo == false && updateMemo?.memoMediaPath == "") {
 			emptyCheck(content: "사진을 추가해주세요.".localized)
 			return true
 		}
@@ -172,9 +177,7 @@ final class MemoCreateViewController: BaseViewController {
 
 	// 공백체크 팝업
 	private func emptyCheck(content: String) {
-		let alert = UIAlertController(title: nil, message: content, preferredStyle: .alert)
-		alert.addAction(UIAlertAction(title: "확인".localized, style: .cancel, handler: nil))
-		present(alert, animated: true, completion: nil)
+		alert(message: content, okTitle: "확인".localized)
 	}
 
 	// 메모 등록
@@ -237,7 +240,11 @@ extension MemoCreateViewController: UIImagePickerControllerDelegate, UINavigatio
 			guard let pickedImage = info[.originalImage] as? UIImage else { return }
 
 			let originalImage: UIImage = pickedImage.getOriginalImage()
-			self.imagePath = originalImage.filePathCreate()
+			if self.isCreateMemo {
+				self.imagePath = originalImage.filePathCreate()
+			} else {
+				self.updateMemo?.memoMediaPath = originalImage.filePathCreate()
+			}
 			self.memoImageView.contentMode = .scaleAspectFit
 			self.memoImageView.image = originalImage
 
@@ -264,10 +271,7 @@ extension MemoCreateViewController: UIImagePickerControllerDelegate, UINavigatio
 			imagePicker.sourceType = .camera
 			present(imagePicker, animated: true, completion: nil)
 		} else {
-			let alert = UIAlertController(title: nil, message: "카메라를 지원하지 않습니다.".localized, preferredStyle: .alert)
-			let cancel = UIAlertAction(title: "취소".localized, style: .cancel, handler: nil)
-			alert.addAction(cancel)
-			present(alert, animated: true, completion: nil)
+			alert(message: "카메라를 지원하지 않습니다.".localized, okTitle: "취소".localized)
 		}
 	}
 

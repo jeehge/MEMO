@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ViewControllerFromStoryBoard {}
+protocol ViewControllerFromStoryBoard { }
 
 extension ViewControllerFromStoryBoard where Self: UIViewController {
 	static func viewController(from storyboardName: StoryboardName) -> Self {
