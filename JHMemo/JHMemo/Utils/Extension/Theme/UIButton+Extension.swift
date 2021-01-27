@@ -24,16 +24,16 @@ extension UIButton {
 	}
 
 	// 확인/수정 버튼 설정
-	func setConfirmStyle(text: String, size: CGFloat, color: UIColor) {
+	func setConfirmStyle(text: String, size: CGFloat) {
 		self.titleLabel?.font = .boldSystemFont(ofSize: size.adjused)
 		self.setTitle(text, for: .normal)
-		self.setTitleColor(color, for: .normal)
+		self.setTitleColor(UIColor(named: ColorName.confirm.description), for: .normal)
 	}
 
 	// 취소/지우기 버튼 설정
-	func setCancelStyle(text: String, size: CGFloat, color: UIColor) {
+	func setCancelStyle(text: String, size: CGFloat) {
 		self.titleLabel?.font = .boldSystemFont(ofSize: size.adjused)
 		self.setTitle(text, for: .normal)
-		self.setTitleColor(color, for: .normal)
+		self.setTitleColor(UIColor(named: ColorName.cancel.description), for: .normal)
 	}
 }

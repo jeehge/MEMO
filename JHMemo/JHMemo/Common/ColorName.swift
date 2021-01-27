@@ -11,6 +11,8 @@ enum ColorName: String, CustomStringConvertible {
 	case title
 	case shadow
 	case button
+	case confirm
+	case cancel
 
 	var description: String {
 		switch self {
@@ -19,6 +21,8 @@ enum ColorName: String, CustomStringConvertible {
 		case .title: return "title"
 		case .shadow: return "shadow"
 		case .button: return "button"
+		case .confirm: return "confirm"
+		case .cancel: return "cancel"
 		}
 	}
 }

@@ -14,6 +14,8 @@
 		E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A725BF0F310013830A /* DrawViewController.swift */; };
 		E92A50E125BF15130013830A /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50E025BF15130013830A /* UIWindow+Extension.swift */; };
 		E92A515825BFB2910013830A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E92A515725BFB2910013830A /* .swiftlint.yml */; };
+		E92A51D025C1757F0013830A /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A51CF25C1757F0013830A /* MemoDetailViewController.swift */; };
+		E92A51D825C18D380013830A /* ViewControllerFromStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A51D725C18D380013830A /* ViewControllerFromStoryBoard.swift */; };
 		E95486BB25BD7ECF00F2C4AC /* MemoCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */; };
 		E95486CB25BD81B100F2C4AC /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486CA25BD81B100F2C4AC /* UITextView+Extension.swift */; };
 		E95486D025BD822A00F2C4AC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486CF25BD822A00F2C4AC /* UIView+Extension.swift */; };
@@ -81,6 +83,8 @@
 		E92A50A725BF0F310013830A /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		E92A50E025BF15130013830A /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		E92A515725BFB2910013830A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E92A51CF25C1757F0013830A /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		E92A51D725C18D380013830A /* ViewControllerFromStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFromStoryBoard.swift; sourceTree = "<group>"; };
 		E94B7B1A900280D96D2CC528 /* Pods-JHMemo-JHMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemo-JHMemoUITests.release.xcconfig"; path = "Target Support Files/Pods-JHMemo-JHMemoUITests/Pods-JHMemo-JHMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E95486BA25BD7ECF00F2C4AC /* MemoCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCreateViewController.swift; sourceTree = "<group>"; };
 		E95486CA25BD81B100F2C4AC /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
@@ -280,10 +284,10 @@
 		E9AA9DEC25BC146C00650723 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E954870F25BDAE2700F2C4AC /* Custom */,
 				E9AA9DFF25BC167C00650723 /* Common */,
 				E9AA9E2925BC1A1800650723 /* List */,
 				E9AA9E2825BC1A1300650723 /* Edit */,
+				E954870F25BDAE2700F2C4AC /* Custom */,
 				E9AA9E2725BC1A0800650723 /* Setting */,
 			);
 			path = Views;
@@ -322,6 +326,7 @@
 				E9AA9E1725BC17B400650723 /* StoryboardName.swift */,
 				E9AA9E5625BC29D500650723 /* CellIdentifierable.swift */,
 				E9AA9E8325BC3EE400650723 /* ColorName.swift */,
+				E92A51D725C18D380013830A /* ViewControllerFromStoryBoard.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				E9AA9E4125BC276700650723 /* Cell */,
 				E9AA9E2A25BC274100650723 /* List.storyboard */,
 				E9AA9E5125BC289800650723 /* MemoListViewController.swift */,
+				E92A51CF25C1757F0013830A /* MemoDetailViewController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -651,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9AA9E8F25BC57E800650723 /* UILabel+Extension.swift in Sources */,
+				E92A51D825C18D380013830A /* ViewControllerFromStoryBoard.swift in Sources */,
 				E9AA9E8425BC3EE400650723 /* ColorName.swift in Sources */,
 				E95486E525BD934500F2C4AC /* CGFloat+Extension.swift in Sources */,
 				E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */,
@@ -669,6 +676,7 @@
 				E9AA9E1825BC17B400650723 /* StoryboardName.swift in Sources */,
 				E9AA9DF525BC14BA00650723 /* MemoInfo.swift in Sources */,
 				E9AA9DAE25BC130B00650723 /* SceneDelegate.swift in Sources */,
+				E92A51D025C1757F0013830A /* MemoDetailViewController.swift in Sources */,
 				E9AA9E8925BC522F00650723 /* URL+Extension.swift in Sources */,
 				E9AA9E7725BC3ACF00650723 /* String+Extension.swift in Sources */,
 				E9AA9E1325BC173500650723 /* BaseViewController.swift in Sources */,

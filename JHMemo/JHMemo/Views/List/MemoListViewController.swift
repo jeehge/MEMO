@@ -98,10 +98,10 @@ extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
 
 	// 선택된 이후에 대한 이벤트
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//		let detailVC = MemoDetailViewController.viewController(from: "List")
-//		detailVC.detailMemoInfo = memoList[indexPath.row]
-//		detailVC.modalTransitionStyle = .crossDissolve
-//		present(detailVC, animated: true, completion: nil)
+		let detailVC = MemoDetailViewController.viewController(from: .list)
+		detailVC.detailMemoInfo = memoList[indexPath.row]
+		detailVC.modalTransitionStyle = .crossDissolve
+		present(detailVC, animated: true, completion: nil)
 	}
 
 	// MARK: - UITableViewDelegate
