@@ -10,6 +10,8 @@
 		33AF0F205B564E92C2FA74F5 /* Pods_JHMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3518F773890729A0A18B8E /* Pods_JHMemoTests.framework */; };
 		5ADCD88568A4E6D6C0814F17 /* Pods_JHMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050249E78DBE76F5C69B7F8 /* Pods_JHMemo.framework */; };
 		8BC0146EEF87A5D3501174C9 /* Pods_JHMemo_JHMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB79223A17D889848AA0DDA /* Pods_JHMemo_JHMemoUITests.framework */; };
+		E90BC88025C2DF17002FAF26 /* FMManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BC87F25C2DF17002FAF26 /* FMManger.swift */; };
+		E90BC89225C30762002FAF26 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BC89125C30762002FAF26 /* SettingViewController.swift */; };
 		E92A50A325BF0F240013830A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A225BF0F240013830A /* DrawingView.swift */; };
 		E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A725BF0F310013830A /* DrawViewController.swift */; };
 		E92A50E125BF15130013830A /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50E025BF15130013830A /* UIWindow+Extension.swift */; };
@@ -48,7 +50,6 @@
 		E9AA9E7725BC3ACF00650723 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E7625BC3ACF00650723 /* String+Extension.swift */; };
 		E9AA9E7C25BC3CE900650723 /* lottie-text.json in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E7B25BC3CE900650723 /* lottie-text.json */; };
 		E9AA9E8425BC3EE400650723 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8325BC3EE400650723 /* ColorName.swift */; };
-		E9AA9E8925BC522F00650723 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8825BC522F00650723 /* URL+Extension.swift */; };
 		E9AA9E8F25BC57E800650723 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */; };
 		E9AA9E9725BC58BE00650723 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,8 @@
 		6EDF2DE618BCC5BC943F5230 /* Pods-JHMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemoTests.release.xcconfig"; path = "Target Support Files/Pods-JHMemoTests/Pods-JHMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7BB79223A17D889848AA0DDA /* Pods_JHMemo_JHMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemo_JHMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3518F773890729A0A18B8E /* Pods_JHMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90BC87F25C2DF17002FAF26 /* FMManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMManger.swift; sourceTree = "<group>"; };
+		E90BC89125C30762002FAF26 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E92A50A225BF0F240013830A /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		E92A50A725BF0F310013830A /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		E92A50E025BF15130013830A /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
@@ -126,7 +129,6 @@
 		E9AA9E7625BC3ACF00650723 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E9AA9E7B25BC3CE900650723 /* lottie-text.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-text.json"; sourceTree = "<group>"; };
 		E9AA9E8325BC3EE400650723 /* ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
-		E9AA9E8825BC522F00650723 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -272,7 +274,6 @@
 				E9AA9E8D25BC57D300650723 /* Theme */,
 				E9AA9E0D25BC171400650723 /* UIViewController+Extension.swift */,
 				E9AA9E7625BC3ACF00650723 /* String+Extension.swift */,
-				E9AA9E8825BC522F00650723 /* URL+Extension.swift */,
 				E95486D725BD82F900F2C4AC /* UIImage+Extension.swift */,
 				E95486DF25BD832C00F2C4AC /* Date+Extension.swift */,
 				E95486E425BD934500F2C4AC /* CGFloat+Extension.swift */,
@@ -305,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				E9AA9DEF25BC14A300650723 /* DBManager.swift */,
+				E90BC87F25C2DF17002FAF26 /* FMManger.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -344,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				E9AA9E3725BC275300650723 /* Setting.storyboard */,
+				E90BC89125C30762002FAF26 /* SettingViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -656,11 +659,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90BC89225C30762002FAF26 /* SettingViewController.swift in Sources */,
 				E9AA9E8F25BC57E800650723 /* UILabel+Extension.swift in Sources */,
 				E92A51D825C18D380013830A /* ViewControllerFromStoryBoard.swift in Sources */,
 				E9AA9E8425BC3EE400650723 /* ColorName.swift in Sources */,
 				E95486E525BD934500F2C4AC /* CGFloat+Extension.swift in Sources */,
 				E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */,
+				E90BC88025C2DF17002FAF26 /* FMManger.swift in Sources */,
 				E9AA9E0E25BC171400650723 /* UIViewController+Extension.swift in Sources */,
 				E95486CB25BD81B100F2C4AC /* UITextView+Extension.swift in Sources */,
 				E92A50A325BF0F240013830A /* DrawingView.swift in Sources */,
@@ -677,7 +682,6 @@
 				E9AA9DF525BC14BA00650723 /* MemoInfo.swift in Sources */,
 				E9AA9DAE25BC130B00650723 /* SceneDelegate.swift in Sources */,
 				E92A51D025C1757F0013830A /* MemoDetailViewController.swift in Sources */,
-				E9AA9E8925BC522F00650723 /* URL+Extension.swift in Sources */,
 				E9AA9E7725BC3ACF00650723 /* String+Extension.swift in Sources */,
 				E9AA9E1325BC173500650723 /* BaseViewController.swift in Sources */,
 				E9AA9E5225BC289800650723 /* MemoListViewController.swift in Sources */,
@@ -864,7 +868,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4U3LY873Q2;
 				INFOPLIST_FILE = "JHMemo/Supporting Files/Info.plist";
@@ -873,9 +877,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jhmemo.projectjh;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.com.jhmemo.projectjh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = JHMemo_AppStore;
+				PROVISIONING_PROFILE_SPECIFIER = JHProjectExtension;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

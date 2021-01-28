@@ -121,10 +121,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWq-6N-g0w">
+                                        <rect key="frame" x="358" y="7.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="FWq-6N-g0w" secondAttribute="height" multiplier="1:1" id="1yN-Yy-EOc"/>
+                                            <constraint firstAttribute="width" constant="40" id="FQl-ay-Lwm"/>
+                                        </constraints>
+                                        <state key="normal" image="icons8-setting"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="background"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="55J-0j-Ung"/>
+                                    <constraint firstItem="FWq-6N-g0w" firstAttribute="centerY" secondItem="yDN-xd-9ne" secondAttribute="centerY" id="Imf-2z-ilv"/>
+                                    <constraint firstAttribute="trailing" secondItem="FWq-6N-g0w" secondAttribute="trailing" constant="16" id="Oqa-do-azF"/>
                                     <constraint firstAttribute="bottom" secondItem="5gV-Cg-M9y" secondAttribute="bottom" constant="4" id="VwS-Nj-a63"/>
                                     <constraint firstItem="5gV-Cg-M9y" firstAttribute="leading" secondItem="yDN-xd-9ne" secondAttribute="leading" constant="32" id="k6P-vo-Q3a"/>
                                 </constraints>
@@ -154,6 +164,7 @@
                         <outlet property="createButton" destination="iiS-dy-QvN" id="OdX-hR-16L"/>
                         <outlet property="createButtonBottomConstraint" destination="a6G-y8-fEh" id="Urh-Co-cOf"/>
                         <outlet property="emptyInfoLabel" destination="diY-uD-CzB" id="fiP-E2-Dpq"/>
+                        <outlet property="settingButton" destination="FWq-6N-g0w" id="BW3-6S-WuV"/>
                         <outlet property="tableView" destination="5fx-Th-FM7" id="Z84-Sf-Pc7"/>
                         <outlet property="titleLabel" destination="5gV-Cg-M9y" id="e8s-xt-VJX"/>
                     </connections>
@@ -321,6 +332,7 @@
     <resources>
         <image name="btn_download" width="37.5" height="37.5"/>
         <image name="icons8-plus_filled_memo" width="256" height="256"/>
+        <image name="icons8-setting" width="32" height="32"/>
         <namedColor name="background">
             <color red="0.87450980392156863" green="0.89411764705882357" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -12,6 +12,7 @@ final class MemoListViewController: BaseViewController {
 	// MARK: - Properties
 	@IBOutlet private weak var tableView: UITableView!
 	@IBOutlet private weak var createButton: UIButton!
+	@IBOutlet private weak var settingButton: UIButton!
 	@IBOutlet private weak var emptyInfoLabel: UILabel!
 	@IBOutlet private weak var titleLabel: UILabel!
 	@IBOutlet private weak var createButtonBottomConstraint: NSLayoutConstraint!
@@ -24,7 +25,6 @@ final class MemoListViewController: BaseViewController {
 		super.viewDidLoad()
 
 		initTableView()
-		initCreateButton()
 		initLabel()
 	}
 
@@ -34,14 +34,6 @@ final class MemoListViewController: BaseViewController {
 		tableView.dataSource = self
 
 		reloadTableView()
-	}
-
-	private func initCreateButton() {
-		createButton.rx.tap.bind { [weak self] in
-			guard let self = self else { return }
-			let createVC: MemoCreateViewController = MemoCreateViewController.viewController(from: .edit)
-			self.present(createVC, animated: true)
-		}.disposed(by: disposeBag)
 	}
 
 	private func initLabel() {
@@ -54,7 +46,6 @@ final class MemoListViewController: BaseViewController {
 		createButton.setShadow()
 	}
 
-	// MARK: - bind
 	private func bind() {
 		let abservable: Observable<[MemoInfo]> = Observable.of(memoList)
 		abservable.subscribe(onNext: { [weak self] list in
@@ -66,6 +57,20 @@ final class MemoListViewController: BaseViewController {
 				self?.emptyInfoLabel.isHidden = true
 			}
 		}).disposed(by: disposeBag)
+
+		createButton.rx.tap.bind { [weak self] in
+			guard let self = self else { return }
+			let createVC: MemoCreateViewController = MemoCreateViewController.viewController(from: .edit)
+			self.present(createVC, animated: true)
+		}.disposed(by: disposeBag)
+
+		settingButton.rx.tap.bind { [weak self] in
+			guard let self = self else { return }
+			let settingVC: SettingViewController = SettingViewController.viewController(from: .setting)
+			settingVC.modalPresentationStyle = .fullScreen
+			settingVC.modalTransitionStyle = .crossDissolve
+			self.present(settingVC, animated: true)
+		}.disposed(by: disposeBag)
 	}
 
 	func reloadTableView() {
@@ -75,9 +80,8 @@ final class MemoListViewController: BaseViewController {
 	}
 }
 
-// MARK: -
+// MARK: - UITableViewDataSource, UITableViewDelegate
 extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
-	// MARK: - UITableViewDataSource
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		return UIScreen.main.bounds.size.width + 50
 	}
@@ -103,8 +107,7 @@ extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
 		detailVC.modalTransitionStyle = .crossDissolve
 		present(detailVC, animated: true, completion: nil)
 	}
-
-	// MARK: - UITableViewDelegate
+	
 	func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
 		return true
 	}
