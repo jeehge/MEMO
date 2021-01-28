@@ -117,7 +117,7 @@ final class DrawingView: UIView {
 		}
 	}
 
-	// MARK: - Clearing : 그려진 path들 지움
+	// Clearing : 그려진 path들 지움
 	func clear() {
 		preRenderImage = nil
 		bezierPath.removeAllPoints()
@@ -132,7 +132,6 @@ final class DrawingView: UIView {
 		return preRenderImage
 	}
 
-	// MARK: - Other
 	// 선을 확인하는 경우
 	private func hasLines() -> Bool {
 		return preRenderImage != nil || !bezierPath.isEmpty

@@ -45,42 +45,4 @@ extension UIImage {
 		UIGraphicsEndImageContext()
 		return newImage
 	}
-
-	// 이미지 로드
-	static func loadImage(imageName: String) -> UIImage {
-		let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
-		let strPath = documentDirectory.appending("/\(imageName)")
-		let fileURL = URL(fileURLWithPath: strPath)
-		do {
-			let imageData = try Data(contentsOf: fileURL)
-			guard let image = UIImage(data: imageData) else { return UIImage()}
-			return image
-		} catch {
-			print("Error loading image : \(error)")
-		}
-		return UIImage()
-	}
-
-	// 파일 경로 생성
-	func filePathCreate() -> String {
-		var resultImagePath: String = ""
-
-		// default FileManager 객체에 대한 참조체 얻기
-		let fileManager = FileManager.default
-
-		// 파일명
-		let imageName = UUID().uuidString
-
-		// get the image path
-		// Documents 외에 속성을 보면 다른 많은 디렉터리를 확인할 수 있다.
-		let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String).appending("/\(imageName)" + ".jpg")
-
-		// get the PNG data for this image
-		let data = self.pngData()
-
-		// store it in the document directory
-		fileManager.createFile(atPath: imagePath, contents: data, attributes: nil)
-		resultImagePath = imageName + ".jpg"
-		return resultImagePath
-	}
 }

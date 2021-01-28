@@ -10,7 +10,6 @@ import Photos
 import RxSwift
 
 final class MemoCreateViewController: BaseViewController {
-
 	// MARK: - Properties
 	@IBOutlet private weak var contentView: UIView!
 	@IBOutlet private weak var todayDateView: UIView!
@@ -87,7 +86,7 @@ final class MemoCreateViewController: BaseViewController {
 
 		// 메모 정보 - 이미지
 		memoImageView.contentMode = .scaleAspectFit
-		memoImageView.image = .loadImage(imageName: infoMemo.memoMediaPath)
+		memoImageView.image = FMManger.shared.loadImage(imageName: infoMemo.memoMediaPath)
 	}
 
 	// MARK: - Notification
@@ -116,7 +115,6 @@ final class MemoCreateViewController: BaseViewController {
 		})
 	}
 
-	// MARK: - bind
 	private func bind() {
 		completeButton.rx.tap.bind { [weak self] in
 			guard let self = self else { return }
@@ -241,9 +239,9 @@ extension MemoCreateViewController: UIImagePickerControllerDelegate, UINavigatio
 
 			let originalImage: UIImage = pickedImage.getOriginalImage()
 			if self.isCreateMemo {
-				self.imagePath = originalImage.filePathCreate()
+				self.imagePath = FMManger.shared.filePathCreate(image: originalImage)
 			} else {
-				self.updateMemo?.memoMediaPath = originalImage.filePathCreate()
+				self.updateMemo?.memoMediaPath = FMManger.shared.filePathCreate(image: originalImage)
 			}
 			self.memoImageView.contentMode = .scaleAspectFit
 			self.memoImageView.image = originalImage
@@ -292,7 +290,7 @@ extension MemoCreateViewController: DrawViewControllerDelegate {
 		imageSelectButton.isHidden = true
 		imageDeleteButton.isHidden = false
 
-		imagePath = drawImage.filePathCreate()
+		imagePath = FMManger.shared.filePathCreate(image: drawImage)
 		memoImageView.image = drawImage
 	}
 }

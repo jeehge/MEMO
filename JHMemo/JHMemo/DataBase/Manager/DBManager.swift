@@ -9,7 +9,7 @@ import SQLite3
 import FMDB
 
 // https://www.appcoda.com/fmdb-sqlite-database/
-class DBManager {
+final class DBManager {
 
 	static let shared: DBManager = DBManager()
 

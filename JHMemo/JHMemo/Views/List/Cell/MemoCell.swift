@@ -43,7 +43,7 @@ final class MemoCell: UITableViewCell {
 	func setMemeoCell(info: MemoInfo) {
 		hashTagLabel.text = info.memoTag.isEmpty ? "내용없음".localized : info.memoTag
 
-		if let url = URL.loadFilePath(imageName: info.memoMediaPath) {
+		if let url = FMManger.shared.loadFilePath(imageName: info.memoMediaPath) {
 			let provider = LocalFileImageDataProvider(fileURL: url)
 			thumbnailImageView.kf.setImage(with: provider)
 		}

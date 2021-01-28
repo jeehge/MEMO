@@ -66,7 +66,7 @@ final class MemoDetailViewController: BaseViewController {
 						self?.dismiss(animated: true)
 					}
 				} else {
-					print("detail memo info is nil")
+					print("👻 detail memo info is nil")
 				}
 			}, cancelTitle: "취소".localized)
 		}.disposed(by: disposeBag)
@@ -105,10 +105,10 @@ final class MemoDetailViewController: BaseViewController {
 		bgImageView.alpha = 0.0
 		bgImageView.clipsToBounds = true
 		bgImageView.contentMode = .scaleAspectFill
-		bgImageView.image = .loadImage(imageName: mediaPath)
+		bgImageView.image = FMManger.shared.loadImage(imageName: mediaPath)
 
 		contentImageVIew.contentMode = .scaleAspectFit
-		contentImageVIew.image = .loadImage(imageName: mediaPath)
+		contentImageVIew.image = FMManger.shared.loadImage(imageName: mediaPath)
 	}
 
 	private func saveGalleryImage() {
@@ -126,7 +126,7 @@ final class MemoDetailViewController: BaseViewController {
 	private func imageSave() {
 		do {
 			guard let path: String = detailMemoInfo?.memoMediaPath else { return }
-			guard let url = URL.loadFilePath(imageName: path) else { return }
+			guard let url = FMManger.shared.loadFilePath(imageName: path) else { return }
 			let data: Data = try Data.init(contentsOf: url)
 			guard let image: UIImage = UIImage(data: data) else { return }
 			UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
