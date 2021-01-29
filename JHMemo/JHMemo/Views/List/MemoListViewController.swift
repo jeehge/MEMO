@@ -63,14 +63,6 @@ final class MemoListViewController: BaseViewController {
 			let createVC: MemoCreateViewController = MemoCreateViewController.viewController(from: .edit)
 			self.present(createVC, animated: true)
 		}.disposed(by: disposeBag)
-
-		settingButton.rx.tap.bind { [weak self] in
-			guard let self = self else { return }
-			let settingVC: SettingViewController = SettingViewController.viewController(from: .setting)
-			settingVC.modalPresentationStyle = .fullScreen
-			settingVC.modalTransitionStyle = .crossDissolve
-			self.present(settingVC, animated: true)
-		}.disposed(by: disposeBag)
 	}
 
 	func reloadTableView() {
@@ -107,7 +99,7 @@ extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
 		detailVC.modalTransitionStyle = .crossDissolve
 		present(detailVC, animated: true, completion: nil)
 	}
-	
+
 	func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
 		return true
 	}
