@@ -861,7 +861,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = jeehge.com.jhmemo.projectjh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhmemo.projectjh;
 				PRODUCT_NAME = "지혜로운 메모";
 				PROVISIONING_PROFILE_SPECIFIER = JHProjectExtension;
 				SWIFT_VERSION = 5.0;
