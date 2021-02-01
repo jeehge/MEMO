@@ -40,7 +40,7 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-struct MemoImageWidgetGroupEntryView : View {
+struct MemoImageWidgetGroupEntryView: View {
     var entry: Provider.Entry
 
     var body: some View {
