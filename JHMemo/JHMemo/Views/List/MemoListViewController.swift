@@ -67,6 +67,10 @@ final class MemoListViewController: BaseViewController {
 
 	func reloadTableView() {
 		memoList = DBManager.shared.selectMemoData()
+		// 위젯에서 보여줄 정보 셋팅
+		if let info = memoList.first {
+			KeychainManager.widgetMemoInfo = info
+		}
 		tableView.reloadData()
 		bind()
 	}

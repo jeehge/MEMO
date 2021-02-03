@@ -58,8 +58,15 @@
 		E9AA9E8425BC3EE400650723 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8325BC3EE400650723 /* ColorName.swift */; };
 		E9AA9E8F25BC57E800650723 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */; };
 		E9AA9E9725BC58BE00650723 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */; };
+		E9B59BE325CAF774005203BF /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B59BE225CAF774005203BF /* KeychainManager.swift */; };
+		E9B59BE825CAF7E5005203BF /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B59BE225CAF774005203BF /* KeychainManager.swift */; };
 		E9ECD2C825CAC11C00CE7C9B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E7625BC3ACF00650723 /* String+Extension.swift */; };
 		E9ECD2CD25CAC12300CE7C9B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E6925BC378200650723 /* Localizable.strings */; };
+		E9ECD30825CADBE800CE7C9B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95486DF25BD832C00F2C4AC /* Date+Extension.swift */; };
+		E9ECD30F25CADF9E00CE7C9B /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECD30E25CADF9E00CE7C9B /* MemoView.swift */; };
+		E9ECD31425CADFA100CE7C9B /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECD30E25CADF9E00CE7C9B /* MemoView.swift */; };
+		E9ECD31925CAE26B00CE7C9B /* MemoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9DF425BC14BA00650723 /* MemoInfo.swift */; };
+		E9ECD31E25CAE26F00CE7C9B /* FMManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BC87F25C2DF17002FAF26 /* FMManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,9 +175,11 @@
 		E9AA9E8325BC3EE400650723 /* ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
 		E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		E9B59BE225CAF774005203BF /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		E9ECD2B725CAB2BF00CE7C9B /* JHMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JHMemo.entitlements; sourceTree = "<group>"; };
 		E9ECD2B825CAB30700CE7C9B /* MemoImageGroup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MemoImageGroup.entitlements; sourceTree = "<group>"; };
 		E9ECD2BD25CAB3D800CE7C9B /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9ECD30E25CADF9E00CE7C9B /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +260,7 @@
 		E98F863225C5C43900FC02E6 /* MemoImageWidgetGroup */ = {
 			isa = PBXGroup;
 			children = (
+				E9ECD30D25CADF6800CE7C9B /* Views */,
 				E98F863325C5C43900FC02E6 /* MemoImageWidgetGroup.swift */,
 				E98F863525C5C43900FC02E6 /* MemoImageWidgetGroup.intentdefinition */,
 				E98F863625C5C43900FC02E6 /* Assets.xcassets */,
@@ -399,6 +409,7 @@
 				E9AA9E5625BC29D500650723 /* CellIdentifierable.swift */,
 				E9AA9E8325BC3EE400650723 /* ColorName.swift */,
 				E92A51D725C18D380013830A /* ViewControllerFromStoryBoard.swift */,
+				E9B59BE225CAF774005203BF /* KeychainManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -451,6 +462,14 @@
 				E95486CF25BD822A00F2C4AC /* UIView+Extension.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		E9ECD30D25CADF6800CE7C9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9ECD30E25CADF9E00CE7C9B /* MemoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -774,9 +793,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9ECD31425CADFA100CE7C9B /* MemoView.swift in Sources */,
 				E98F863925C5C43900FC02E6 /* MemoImageWidgetGroup.intentdefinition in Sources */,
+				E9ECD31E25CAE26F00CE7C9B /* FMManger.swift in Sources */,
+				E9ECD30825CADBE800CE7C9B /* Date+Extension.swift in Sources */,
 				E9ECD2C825CAC11C00CE7C9B /* String+Extension.swift in Sources */,
 				E98F863425C5C43900FC02E6 /* MemoImageWidgetGroup.swift in Sources */,
+				E9ECD31925CAE26B00CE7C9B /* MemoInfo.swift in Sources */,
+				E9B59BE825CAF7E5005203BF /* KeychainManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +818,7 @@
 				E95486CB25BD81B100F2C4AC /* UITextView+Extension.swift in Sources */,
 				E92A50A325BF0F240013830A /* DrawingView.swift in Sources */,
 				E9AA9E0925BC16F100650723 /* IntroViewController.swift in Sources */,
+				E9ECD30F25CADF9E00CE7C9B /* MemoView.swift in Sources */,
 				E9AA9E5725BC29D500650723 /* CellIdentifierable.swift in Sources */,
 				E95486E025BD832C00F2C4AC /* Date+Extension.swift in Sources */,
 				E9AA9E9725BC58BE00650723 /* UIButton+Extension.swift in Sources */,
@@ -805,6 +830,7 @@
 				E9AA9E1825BC17B400650723 /* StoryboardName.swift in Sources */,
 				E9AA9DF525BC14BA00650723 /* MemoInfo.swift in Sources */,
 				E9AA9DAE25BC130B00650723 /* SceneDelegate.swift in Sources */,
+				E9B59BE325CAF774005203BF /* KeychainManager.swift in Sources */,
 				E92A51D025C1757F0013830A /* MemoDetailViewController.swift in Sources */,
 				E9AA9E7725BC3ACF00650723 /* String+Extension.swift in Sources */,
 				E9AA9E1325BC173500650723 /* BaseViewController.swift in Sources */,
@@ -896,7 +922,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -922,7 +948,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
