@@ -10,6 +10,7 @@
 		33AF0F205B564E92C2FA74F5 /* Pods_JHMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3518F773890729A0A18B8E /* Pods_JHMemoTests.framework */; };
 		5ADCD88568A4E6D6C0814F17 /* Pods_JHMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050249E78DBE76F5C69B7F8 /* Pods_JHMemo.framework */; };
 		8BC0146EEF87A5D3501174C9 /* Pods_JHMemo_JHMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB79223A17D889848AA0DDA /* Pods_JHMemo_JHMemoUITests.framework */; };
+		DC1D5CACEE2DDF007613A06D /* Pods_JHMemo_MemoImageWidgetGroupExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01566070419CEC013EC2558 /* Pods_JHMemo_MemoImageWidgetGroupExtension.framework */; };
 		E90BC88025C2DF17002FAF26 /* FMManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BC87F25C2DF17002FAF26 /* FMManger.swift */; };
 		E92A50A325BF0F240013830A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A225BF0F240013830A /* DrawingView.swift */; };
 		E92A50A825BF0F310013830A /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A50A725BF0F310013830A /* DrawViewController.swift */; };
@@ -57,6 +58,8 @@
 		E9AA9E8425BC3EE400650723 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8325BC3EE400650723 /* ColorName.swift */; };
 		E9AA9E8F25BC57E800650723 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */; };
 		E9AA9E9725BC58BE00650723 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */; };
+		E9ECD2C825CAC11C00CE7C9B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9E7625BC3ACF00650723 /* String+Extension.swift */; };
+		E9ECD2CD25CAC12300CE7C9B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9AA9E6925BC378200650723 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,9 +106,12 @@
 		3050249E78DBE76F5C69B7F8 /* Pods_JHMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F3C09859D2CA9406E86848 /* Pods-JHMemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemoTests.debug.xcconfig"; path = "Target Support Files/Pods-JHMemoTests/Pods-JHMemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5145BB718FA0E7D3D2350319 /* Pods-JHMemo-JHMemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemo-JHMemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-JHMemo-JHMemoUITests/Pods-JHMemo-JHMemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		65F969CCA45505A1F669D071 /* Pods-JHMemo-MemoImageWidgetGroupExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemo-MemoImageWidgetGroupExtension.release.xcconfig"; path = "Target Support Files/Pods-JHMemo-MemoImageWidgetGroupExtension/Pods-JHMemo-MemoImageWidgetGroupExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6EDF2DE618BCC5BC943F5230 /* Pods-JHMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemoTests.release.xcconfig"; path = "Target Support Files/Pods-JHMemoTests/Pods-JHMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7BB79223A17D889848AA0DDA /* Pods_JHMemo_JHMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemo_JHMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3518F773890729A0A18B8E /* Pods_JHMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01566070419CEC013EC2558 /* Pods_JHMemo_MemoImageWidgetGroupExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHMemo_MemoImageWidgetGroupExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B5DA72FAF88AE1791C64ED /* Pods-JHMemo-MemoImageWidgetGroupExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHMemo-MemoImageWidgetGroupExtension.debug.xcconfig"; path = "Target Support Files/Pods-JHMemo-MemoImageWidgetGroupExtension/Pods-JHMemo-MemoImageWidgetGroupExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		E90BC87F25C2DF17002FAF26 /* FMManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMManger.swift; sourceTree = "<group>"; };
 		E92A50A225BF0F240013830A /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		E92A50A725BF0F310013830A /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +168,9 @@
 		E9AA9E8325BC3EE400650723 /* ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
 		E9AA9E8E25BC57E800650723 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		E9AA9E9625BC58BE00650723 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		E9ECD2B725CAB2BF00CE7C9B /* JHMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JHMemo.entitlements; sourceTree = "<group>"; };
+		E9ECD2B825CAB30700CE7C9B /* MemoImageGroup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MemoImageGroup.entitlements; sourceTree = "<group>"; };
+		E9ECD2BD25CAB3D800CE7C9B /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +180,7 @@
 			files = (
 				E98F863125C5C43900FC02E6 /* SwiftUI.framework in Frameworks */,
 				E98F862F25C5C43900FC02E6 /* WidgetKit.framework in Frameworks */,
+				DC1D5CACEE2DDF007613A06D /* Pods_JHMemo_MemoImageWidgetGroupExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,11 +214,13 @@
 		2D28FC723C07423593F3A087 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9ECD2BD25CAB3D800CE7C9B /* Kingfisher.framework */,
 				3050249E78DBE76F5C69B7F8 /* Pods_JHMemo.framework */,
 				7BB79223A17D889848AA0DDA /* Pods_JHMemo_JHMemoUITests.framework */,
 				7F3518F773890729A0A18B8E /* Pods_JHMemoTests.framework */,
 				E98F862E25C5C43900FC02E6 /* WidgetKit.framework */,
 				E98F863025C5C43900FC02E6 /* SwiftUI.framework */,
+				A01566070419CEC013EC2558 /* Pods_JHMemo_MemoImageWidgetGroupExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,6 +234,8 @@
 				E94B7B1A900280D96D2CC528 /* Pods-JHMemo-JHMemoUITests.release.xcconfig */,
 				49F3C09859D2CA9406E86848 /* Pods-JHMemoTests.debug.xcconfig */,
 				6EDF2DE618BCC5BC943F5230 /* Pods-JHMemoTests.release.xcconfig */,
+				D2B5DA72FAF88AE1791C64ED /* Pods-JHMemo-MemoImageWidgetGroupExtension.debug.xcconfig */,
+				65F969CCA45505A1F669D071 /* Pods-JHMemo-MemoImageWidgetGroupExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -248,6 +262,7 @@
 		E9AA9D9F25BC130B00650723 = {
 			isa = PBXGroup;
 			children = (
+				E9ECD2B825CAB30700CE7C9B /* MemoImageGroup.entitlements */,
 				E92A515725BFB2910013830A /* .swiftlint.yml */,
 				E9AA9DAA25BC130B00650723 /* JHMemo */,
 				E9AA9DC125BC130C00650723 /* JHMemoTests */,
@@ -273,6 +288,7 @@
 		E9AA9DAA25BC130B00650723 /* JHMemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9ECD2B725CAB2BF00CE7C9B /* JHMemo.entitlements */,
 				E9AA9E1F25BC17D400650723 /* Common */,
 				E9AA9E2025BC17E200650723 /* DataBase */,
 				E9AA9DEC25BC146C00650723 /* Views */,
@@ -444,6 +460,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E98F863E25C5C43900FC02E6 /* Build configuration list for PBXNativeTarget "MemoImageWidgetGroupExtension" */;
 			buildPhases = (
+				30F71672EFA0FBE0082428AC /* [CP] Check Pods Manifest.lock */,
 				E98F862925C5C43800FC02E6 /* Sources */,
 				E98F862A25C5C43800FC02E6 /* Frameworks */,
 				E98F862B25C5C43800FC02E6 /* Resources */,
@@ -571,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98F863725C5C43900FC02E6 /* Assets.xcassets in Resources */,
+				E9ECD2CD25CAC12300CE7C9B /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +642,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-JHMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30F71672EFA0FBE0082428AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JHMemo-MemoImageWidgetGroupExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -735,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98F863925C5C43900FC02E6 /* MemoImageWidgetGroup.intentdefinition in Sources */,
+				E9ECD2C825CAC11C00CE7C9B /* String+Extension.swift in Sources */,
 				E98F863425C5C43900FC02E6 /* MemoImageWidgetGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -835,9 +876,11 @@
 /* Begin XCBuildConfiguration section */
 		E98F863F25C5C43900FC02E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B5DA72FAF88AE1791C64ED /* Pods-JHMemo-MemoImageWidgetGroupExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MemoImageGroup.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4U3LY873Q2;
@@ -859,9 +902,11 @@
 		};
 		E98F864025C5C43900FC02E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F969CCA45505A1F669D071 /* Pods-JHMemo-MemoImageWidgetGroupExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MemoImageGroup.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4U3LY873Q2;
@@ -1006,6 +1051,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JHMemo/JHMemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4U3LY873Q2;
@@ -1030,6 +1076,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JHMemo/JHMemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4U3LY873Q2;

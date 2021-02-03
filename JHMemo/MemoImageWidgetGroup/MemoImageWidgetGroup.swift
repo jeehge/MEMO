@@ -63,8 +63,8 @@ struct MemoImageWidgetGroup: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             MemoImageWidgetGroupEntryView(entry: entry)
         }
-        .configurationDisplayName("지혜로운 메모")
-        .description("This is an example widget.")
+		.configurationDisplayName("지혜로운 메모 :)".localized)
+        .description("매일매일 오늘 일을 기록해보세요.")
 		.supportedFamilies([.systemSmall, .systemMedium])
     }
 }

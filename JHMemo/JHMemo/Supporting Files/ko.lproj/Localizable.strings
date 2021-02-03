@@ -45,3 +45,6 @@
 "NSCameraUsageDescription" = "이미지 메모를 등록하기 위해 카메라 촬영 기능이 필요합니다.";
 "NSPhotoLibraryAddUsageDescription" = "이미지 메모를 등록하기 위해 포토라이브러리가 필요합니다.";
 "NSPhotoLibraryUsageDescription" = "이미지 메모를 등록하기 위해 포토라이브러리가 필요합니다.";
+
+/** Widget */
+"매일매일 오늘 일을 기록해보세요." = "매일매일 오늘 일을 기록해보세요.";

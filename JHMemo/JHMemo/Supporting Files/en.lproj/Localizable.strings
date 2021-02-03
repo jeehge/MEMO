@@ -45,3 +45,6 @@
 "NSCameraUsageDescription" = "Camera capture is required to register image memo.";
 "NSPhotoLibraryAddUsageDescription" = "A photo library is required to register image memo.";
 "NSPhotoLibraryUsageDescription" = "A photo library is required to register image memo.";
+
+/** Widget */
+"매일매일 오늘 일을 기록해보세요." = "Record today's work every day.";
