@@ -14,14 +14,9 @@ target 'JHMemo' do
 		pod 'SwiftLint'
 		pod 'KeychainSwift'
 		pod 'Kingfisher/SwiftUI'
-		
-  target 'JHMemoTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'JHMemoUITests' do
-    # Pods for testing
-  end
+	
+	target 'MemoGroupExtension' do
+		# Pods for testing
+	end
 
 end

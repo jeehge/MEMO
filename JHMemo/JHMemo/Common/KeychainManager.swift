@@ -10,5 +10,4 @@ import KeychainSwift
 final class KeychainManager {
 
 	static let shared: KeychainManager = KeychainManager()
-	
 }

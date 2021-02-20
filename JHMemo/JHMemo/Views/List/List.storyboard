@@ -12,7 +12,7 @@
         <!--Memo List View Controller-->
         <scene sceneID="fph-iP-gkV">
             <objects>
-                <viewController storyboardIdentifier="MemoListViewController" id="9Nh-Dq-M3a" customClass="MemoListViewController" customModule="지혜로운_메모" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoListViewController" id="9Nh-Dq-M3a" customClass="MemoListViewController" customModule="JHMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SwE-yV-ToO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="99" width="414" height="797"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MemoCell" rowHeight="271" id="SOz-fD-5Z1" customClass="MemoCell" customModule="지혜로운_메모" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MemoCell" rowHeight="271" id="SOz-fD-5Z1" customClass="MemoCell" customModule="JHMemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="271"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SOz-fD-5Z1" id="OK2-tw-7Ih">
@@ -165,7 +165,7 @@
         <!--Memo Detail View Controller-->
         <scene sceneID="eok-a8-CIY">
             <objects>
-                <viewController storyboardIdentifier="MemoDetailViewController" id="LYw-ZL-jcd" customClass="MemoDetailViewController" customModule="지혜로운_메모" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoDetailViewController" id="LYw-ZL-jcd" customClass="MemoDetailViewController" customModule="JHMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M7O-rS-wO0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -67,7 +67,6 @@ final class MemoListViewController: BaseViewController {
 
 	func reloadTableView() {
 		memoList = DBManager.shared.selectMemoData()
-		
 		tableView.reloadData()
 		bind()
 	}
