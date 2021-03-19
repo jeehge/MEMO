@@ -11,12 +11,7 @@ target 'JHMemo' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'lottie-ios'
-		pod 'SwiftLint'
-		pod 'KeychainSwift'
-		pod 'Kingfisher/SwiftUI'
-	
-	target 'MemoGroupExtension' do
-		# Pods for testing
-	end
+    pod 'SwiftLint'
+    pod 'KeychainSwift'
 
 end
